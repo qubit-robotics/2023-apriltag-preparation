@@ -3,6 +3,8 @@ import wpilib
 import commands2
 import commands2.button
 
+import subsystem.drivetrain as driveSub
+
 
 class RobotContainer:
     """
@@ -13,8 +15,7 @@ class RobotContainer:
     """
 
     def __init__(self) -> None:
-
-        pass
+        self.drivesub = driveSub.Drive()
 
     def configureButtonBindings(self):
         """
